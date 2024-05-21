@@ -18,3 +18,6 @@ Sorpresa: Vi lascio un markup html bello pronto da utilizzare, se volete potete 
 
 - BONUS 1
     - Riutilizzo lo stesso v-for per la visualizzazione delle immagini dello slider per le thumb creando un nuovo method pe l'evento al click
+
+- BONUS 2
+    - Sfruttando il ciclo di vita dell'app uso un setInterval di tre secondi che usa la funzione di freccia avanti
