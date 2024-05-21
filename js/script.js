@@ -108,12 +108,17 @@ createApp({
     methods: {
         nextImage() {
             if (this.currentIndex < this.slides.length - 1) {
-                this.currentIndex++
+                currentIndex++
+            } else {
+                this.currentIndex = 0;
             }
         },
+
         prevImage() {
             if (this.currentIndex > 0) {
                 this.currentIndex--
+            } else {
+                this.currentIndex = this.slides.length - 1;
             }
         }
     }
