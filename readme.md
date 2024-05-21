@@ -11,3 +11,7 @@ Sorpresa: Vi lascio un markup html bello pronto da utilizzare, se volete potete 
 
 
 - Ricreo lo slider base usando Vue e i file html e css forniti
+    - Creo variabile dell app che ritorna l'array di oggeti e un contatore dell'indice
+    - Uso v-for per selezionare solo l'elemento dell'array che mi serve sfruttando il contatore dell indice 
+    - Uso v-bind per l'indirizzo dell'immagine e alt 
+    - Uso @click sui tasti per evento al click usando la stessa logica del vecchio esercizio
