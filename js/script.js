@@ -108,7 +108,7 @@ createApp({
     methods: {
         nextImage() {
             if (this.currentIndex < this.slides.length - 1) {
-                currentIndex++
+                this.currentIndex++
             } else {
                 this.currentIndex = 0;
             }
@@ -120,6 +120,10 @@ createApp({
             } else {
                 this.currentIndex = this.slides.length - 1;
             }
+        },
+
+        setImage(index){
+            this.currentIndex = index;
         }
     }
 

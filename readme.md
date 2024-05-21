@@ -15,3 +15,6 @@ Sorpresa: Vi lascio un markup html bello pronto da utilizzare, se volete potete 
     - Uso v-for per selezionare solo l'elemento dell'array che mi serve sfruttando il contatore dell indice 
     - Uso v-bind per l'indirizzo dell'immagine e alt 
     - Uso @click sui tasti per evento al click usando la stessa logica del vecchio esercizio
+
+- BONUS 1
+    - Riutilizzo lo stesso v-for per la visualizzazione delle immagini dello slider per le thumb creando un nuovo method pe l'evento al click
