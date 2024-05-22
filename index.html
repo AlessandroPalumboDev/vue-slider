@@ -14,10 +14,10 @@
     <div id="app">
 
         <div class="container">
-            <div class="slider-wrapper" tabindex="0" v-cloak>
+            <div class="slider-wrapper" tabindex="0" v-cloak >
 
                 <!-- v-for per portare in pagina tutte le immagini dell' array ma con v-show setta il display solo dell'immagine con indici uguale al contatore -->
-                <div class="item" v-for="(slides, index) in slides" v-show="currentIndex === index">
+                <div class="item" v-for="(slides, index) in slides" v-show="currentIndex === index" >
                     <!-- v-bind per indirizzo e alt dell'immagine -->
                     <img :src="slides.image" :alt="slides.title" />
                     <!-- doppio baffo per usare collegare le stringe delle chiavi dell'oggetto all'interno dell'array -->
@@ -31,17 +31,17 @@
                     </div>
                 </div>
 
-                 <div class="thumbs">
+                <div class="thumbs">
 
                     <!-- @click per l'evento che sfrutta le funzioni all'interno di methods -->
                     <div class="prev" @click="prevImage"></div>
                     <div class="next" @click="nextImage"></div>
 
-                    <div class="thumb"  v-for="(slides, index) in slides">
+                    <div class="thumb" v-for="(slides, index) in slides" :class="{active: currentIndex === index}">
                         <!-- al click imposta il contatore dell'indice uguale a quello dell'immagine cliccata -->
-                        <img :src="slides.image" :alt="slides.title" @click="setImage(index)"/>
+                        <img :src="slides.image" :alt="slides.title" @click="setImage(index)" />
                     </div>
-                </div> 
+                </div>
 
             </div>
         </div>
