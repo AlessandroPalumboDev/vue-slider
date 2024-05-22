@@ -17,16 +17,16 @@
             <div class="slider-wrapper" tabindex="0" v-cloak @mouseenter="stopNext" @mouseleave="startNext">
 
                 <!-- v-for per portare in pagina tutte le immagini dell' array ma con v-show setta il display solo dell'immagine con indici uguale al contatore -->
-                <div class="item" v-for="(slides, index) in slides" v-show="currentIndex === index" >
+                <div class="item">
                     <!-- v-bind per indirizzo e alt dell'immagine -->
-                    <img :src="slides.image" :alt="slides.title" />
+                    <img :src="slides[currentIndex].image" :alt="slides[currentIndex].title" />
                     <!-- doppio baffo per usare collegare le stringe delle chiavi dell'oggetto all'interno dell'array -->
                     <div class="text">
                         <h3>
-                            {{slides.title}}
+                            {{slides[currentIndex].title}}
                         </h3>
                         <p>
-                            {{slides.text}}
+                            {{slides[currentIndex].text}}
                         </p>
                     </div>
                 </div>
