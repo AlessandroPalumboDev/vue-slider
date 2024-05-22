@@ -21,3 +21,9 @@ Sorpresa: Vi lascio un markup html bello pronto da utilizzare, se volete potete 
 
 - BONUS 2
     - Sfruttando il ciclo di vita dell'app uso un setInterval di tre secondi che usa la funzione di freccia avanti
+
+- BONUS 3
+    - aggiungo eventi al passaggio del mouse sullo slider @mouseenter @mouseleave che sfruttano le funzioni che gestiscono l'autoplay
+    - nei data aggiungo una chiave al return nulla
+    - creo la funzione di autoplay tra i methods che modifica la chiave nulla e la richiamo in mounted
+    - creo la funzione di stop con clearInterval

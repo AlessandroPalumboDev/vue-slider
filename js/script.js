@@ -104,6 +104,9 @@ createApp({
 
             // contatore indice per array
             currentIndex: 0,
+
+            currentInterval: null,
+
         };
     },
 
@@ -130,12 +133,22 @@ createApp({
         setImage(index) {
             this.currentIndex = index;
         },
+
+
+        // funzione di inizio autoplay
+        startNext() {
+            this.currentInterval = setInterval(this.nextImage, 3000)
+        },
+
+        // funzione di stop autoplay
+        stopNext() {
+            clearInterval(this.currentInterval);
+        },
     },
 
-    // cambio slide ogni tre secondi
+    // richiamo funzione di inizio autoplay
     mounted() {
-        setInterval(() => {
-            this.nextImage()
-        }, 3000)}
-    }).mount('#app')
+        this.startNext()
+    }
+}).mount('#app')
 
